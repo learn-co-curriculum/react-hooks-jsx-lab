@@ -3,7 +3,19 @@ import { name, city } from "../data/data.js";
 
 function Home() {
   // update the JSX being returned!
-  return <div>Home</div>;
+  // const obj = { color: "firebrick" };
+  // style="color: firebrick"
+  // style={{marginRight: spacing + 'em'}}
+  // style={{color: "firebrick"}}
+  return (
+    <div id="home">
+      Home
+      <h1 style={{ color: "firebrick" }}>
+        { name } is a Web Developer from { city }
+      </h1>
+    </div>
+  );
+  
 }
 
 export default Home;
